@@ -1,0 +1,19 @@
+[00:00:04] [Server thread/INFO]: and_potatoes lost connection: 连接中止
+[00:00:04] [Server thread/INFO]: and_potatoes退出了游戏
+[00:00:04] [main/INFO]: [CHAT] and_potatoes退出了游戏
+[00:00:04] [Server thread/INFO]: Baking listener list for IEventState with 1 listeners
+[00:00:19] [Server thread/INFO]: RailgunHamster lost connection: 连接中止
+[00:00:19] [Server thread/INFO]: RailgunHamster退出了游戏
+[00:00:19] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[00:00:19] [Server thread/INFO]: Stopping server
+[00:00:19] [Server thread/INFO]: Saving players
+[00:00:19] [Server thread/INFO]: Saving worlds
+[00:00:19] [Server thread/INFO]: Saving chunks for level '魔法生存'/overworld
+[00:00:20] [Server thread/INFO]: Unloading dimension 0
+[00:00:21] [Server thread/INFO]: Applying holder lookups
+[00:00:21] [Server thread/INFO]: Holder lookups applied
+[00:00:28] [main/INFO]: LiteLoader is shutting down, shutting down core providers and syncing configuration
+[00:00:28] [main/INFO]: Baking listener list for ShutdownObserver with 3 listeners
+[00:00:28] [main/INFO]: Stopping!
+[00:00:28] [main/INFO]: SoundSystem shutting down...
+[00:00:28] [main/WARN]: Author: Paul Lamb, www.paulscode.com
