@@ -64,12 +64,20 @@
   },
   "accounts": [
     {
-      "type": "offline",
-      "uuid": "f8da0d61e01834ffa463789d2b1c49b9",
-      "username": "RailgunHamster"
+      "clientToken": "ab1774ed966b4e408d7d25f264e11cd0",
+      "displayName": "RailgunHamster",
+      "userProperties": {
+        "preferredLanguage": "zh-tw",
+        "registrationCountry": "CN"
+      },
+      "accessToken": "a0e817bf3fa446d99d2e582c3a118e1a",
+      "type": "yggdrasil",
+      "uuid": "2fc30faab0dd4e21825096a0fcf12f2b",
+      "userid": "566ec74641545d325645c7c83b748f3c",
+      "username": "406086212@qq.com"
     }
   ],
-  "selectedAccount": "RailgunHamster:RailgunHamster",
+  "selectedAccount": "406086212@qq.com:RailgunHamster",
   "fontFamily": "Consolas",
   "fontSize": 12.0,
   "logLines": 500,

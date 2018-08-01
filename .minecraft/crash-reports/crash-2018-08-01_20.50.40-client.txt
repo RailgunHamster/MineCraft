@@ -1,0 +1,186 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  ForgelinPlugin (Forgelin-1.7.4.jar)
+  llibrary (llibrary-core-1.0.6-1.12.2.jar)
+Contact their authors BEFORE contacting forge
+
+// I just don't know what went wrong :(
+
+Time: 8/1/18 8:50 PM
+Description: Updating screen events
+
+java.lang.IndexOutOfBoundsException: Index: 83, Size: 46
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at net.minecraft.inventory.Container.func_184996_a(Container.java:356)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.func_187098_a(PlayerControllerMP.java:566)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_184098_a(GuiContainer.java:638)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146983_a(GuiContainer.java:671)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_73869_a(GuiContainer.java:648)
+	at net.minecraft.client.gui.GuiScreen.func_146282_l(GuiScreen.java:558)
+	at net.minecraft.client.gui.GuiScreen.func_146269_k(GuiScreen.java:512)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1757)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1096)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at net.minecraft.inventory.Container.func_184996_a(Container.java:356)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.func_187098_a(PlayerControllerMP.java:566)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_184098_a(GuiContainer.java:638)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146983_a(GuiContainer.java:671)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_73869_a(GuiContainer.java:648)
+	at net.minecraft.client.gui.GuiScreen.func_146282_l(GuiScreen.java:558)
+	at net.minecraft.client.gui.GuiScreen.func_146269_k(GuiScreen.java:512)
+
+-- Affected screen --
+Details:
+	Screen name: ~~ERROR~~ NullPointerException: null
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 2 total; [EntityPlayerSP['RailgunHamster'/400, l='MpServer', x=56.89, y=143.94, z=215.36], EntityOtherPlayerMP['Bobxu'/31718, l='MpServer', x=40.49, y=70.00, z=219.01]]
+	Chunk stats: MultiplayerChunkCache: 289, 289
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (15,64,262), Chunk: (at 15,4,6 in 0,16; contains blocks 0,0,256 to 15,255,271), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 3011555 game time, 3387574 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 208 total; [EntitySpider['蜘蛛'/138246, l='MpServer', x=11.70, y=47.00, z=214.76], EntityCreeper['爬行者'/138245, l='MpServer', x=62.50, y=22.00, z=190.89], EntityItemFrame['entity.ItemFrame.name'/25097, l='MpServer', x=85.03, y=142.50, z=213.50], EntityItemFrame['entity.ItemFrame.name'/109076, l='MpServer', x=83.03, y=142.50, z=213.50], EntityItemFrame['entity.ItemFrame.name'/25112, l='MpServer', x=85.03, y=143.50, z=213.50], EntitySkeleton['骷髅'/139800, l='MpServer', x=74.50, y=21.00, z=193.50], EntitySkeleton['骷髅'/139801, l='MpServer', x=75.50, y=21.00, z=192.50], EntityZombie['僵尸'/139807, l='MpServer', x=77.50, y=16.00, z=191.50], EntityCreeper['爬行者'/139819, l='MpServer', x=-1.50, y=42.00, z=221.50], EntityBat['蝙蝠'/139823, l='MpServer', x=-2.80, y=29.00, z=277.25], EntityItemFrame['entity.ItemFrame.name'/25135, l='MpServer', x=85.03, y=144.50, z=213.50], EntityCreeper['爬行者'/139821, l='MpServer', x=63.50, y=16.00, z=200.50], EntitySkeleton['骷髅'/139827, l='MpServer', x=62.50, y=16.00, z=201.50], EntityOtherPlayerMP['and_potatoes'/89888, l='MpServer', x=60.99, y=72.11, z=244.26], EntitySkeleton['骷髅'/140855, l='MpServer', x=31.50, y=24.00, z=142.50], EntityBat['蝙蝠'/139828, l='MpServer', x=36.42, y=15.22, z=161.52], EntityBat['蝙蝠'/139834, l='MpServer', x=46.82, y=19.87, z=234.36], EntityOtherPlayerMP['Bobxu'/31718, l='MpServer', x=46.46, y=72.00, z=222.46], EntitySkeleton['骷髅'/140856, l='MpServer', x=30.50, y=24.00, z=142.50], EntityItem['item.tile.dirt.default'/131134, l='MpServer', x=51.52, y=69.00, z=214.20], EntityItem['item.tile.dirt.default'/131133, l='MpServer', x=52.27, y=70.00, z=214.09], EntitySkeleton['骷髅'/140861, l='MpServer', x=52.50, y=29.00, z=155.50], EntityItem['item.tile.dirt.default'/131139, l='MpServer', x=52.88, y=70.00, z=213.13], EntityItem['item.tile.dirt.default'/131136, l='MpServer', x=53.01, y=70.00, z=215.16], EntityItem['item.tile.dirt.default'/131143, l='MpServer', x=50.33, y=71.00, z=212.85], EntityItem['item.tile.dirt.default'/131140, l='MpServer', x=51.16, y=69.00, z=213.26], EntitySkeleton['骷髅'/139850, l='MpServer', x=60.50, y=18.00, z=156.50], EntityItem['item.tile.dirt.default'/131144, l='MpServer', x=48.49, y=71.00, z=212.45], EntityItem['item.item.crickets'/131145, l='MpServer', x=48.25, y=71.00, z=212.46], EntitySpider['蜘蛛'/137801, l='MpServer', x=65.50, y=22.00, z=169.50], EntityItem['item.item.crickets'/131150, l='MpServer', x=50.08, y=72.00, z=211.91], EntityItem['item.tile.dirt.default'/131151, l='MpServer', x=50.59, y=68.00, z=216.74], EntityItem['item.tile.dirt.default'/131148, l='MpServer', x=53.83, y=72.00, z=211.94], EntityItem['item.item.crickets'/131152, l='MpServer', x=51.39, y=68.00, z=217.88], EntityItem['item.tile.dirt.default'/131161, l='MpServer', x=51.84, y=68.00, z=217.56], EntityItemFrame['entity.ItemFrame.name'/122463, l='MpServer', x=83.03, y=143.50, z=213.50], EntityOtherPlayerMP['and_potatoes'/89888, l='MpServer', x=75.02, y=72.00, z=219.19], EntityItem['item.tile.dirt.default'/131179, l='MpServer', x=53.15, y=72.00, z=217.37], EntityOtherPlayerMP['Bobxu'/31718, l='MpServer', x=40.49, y=70.00, z=219.01], EntityItem['item.tile.dirt.default'/131177, l='MpServer', x=50.73, y=69.00, z=215.91], EntityItem['item.tile.dirt.default'/131183, l='MpServer', x=51.65, y=69.00, z=215.06], EntityItem['item.tile.dirt.default'/131185, l='MpServer', x=52.23, y=69.00, z=216.50], EntityCreeper['爬行者'/139382, l='MpServer', x=119.50, y=26.00, z=203.50], EntityEnderman['末影人'/135287, l='MpServer', x=-2.50, y=14.00, z=195.50], EntityItem['item.item.crickets'/131188, l='MpServer', x=50.88, y=69.00, z=214.86], EntityCow['牛'/119, l='MpServer', x=-18.79, y=77.00, z=161.34], EntityItemFrame['entity.ItemFrame.name'/122489, l='MpServer', x=83.03, y=144.50, z=213.50], GoatEntity['Goat'/120, l='MpServer', x=-31.70, y=72.00, z=207.30], EntityBat['蝙蝠'/139386, l='MpServer', x=31.75, y=34.10, z=242.62], EntityCow['牛'/121, l='MpServer', x=-21.40, y=70.00, z=221.69], EntityCow['牛'/122, l='MpServer', x=-16.63, y=78.00, z=208.25], EntityCreeper['爬行者'/139385, l='MpServer', x=85.50, y=63.00, z=171.50], EntityCreeper['爬行者'/133247, l='MpServer', x=43.85, y=54.00, z=224.59], EntityHorse['马'/126, l='MpServer', x=-20.90, y=68.00, z=281.00], EntityOtherPlayerMP['Bobxu'/31718, l='MpServer', x=66.13, y=71.00, z=215.90], EntityOtherPlayerMP['Bobxu'/31718, l='MpServer', x=35.64, y=69.00, z=248.36], EntitySkeleton['骷髅'/140934, l='MpServer', x=38.69, y=55.00, z=233.50], EntityCreeper['爬行者'/140935, l='MpServer', x=32.30, y=55.48, z=239.76], GoatEntity['Goat'/137, l='MpServer', x=-10.37, y=75.00, z=158.75], EntityZombie['僵尸'/138, l='MpServer', x=-15.50, y=19.00, z=180.24], EntitySkeleton['骷髅'/140936, l='MpServer', x=42.50, y=55.00, z=230.70], GoatEntity['Goat'/139, l='MpServer', x=-5.30, y=72.00, z=171.49], EntityCow['牛'/140, l='MpServer', x=-13.67, y=79.00, z=203.62], EntityCow['牛'/142, l='MpServer', x=0.18, y=73.00, z=212.19], EntityOtherPlayerMP['Bobxu'/31718, l='MpServer', x=42.60, y=71.03, z=222.78], EntityHorse['马'/144, l='MpServer', x=-8.11, y=70.00, z=222.05], GoatEntity['Goat'/145, l='MpServer', x=-6.31, y=57.00, z=240.49], EntityCow['牛'/146, l='MpServer', x=-12.48, y=69.00, z=252.84], EntityCow['牛'/147, l='MpServer', x=-9.22, y=70.00, z=258.51], EntityCow['牛'/148, l='MpServer', x=-1.66, y=71.00, z=293.13], EntityCow['牛'/156, l='MpServer', x=-2.66, y=64.00, z=179.70], EntityCow['牛'/161, l='MpServer', x=5.20, y=67.00, z=224.44], EntityCreeper['爬行者'/139425, l='MpServer', x=-11.50, y=21.00, z=184.50], EntityItemFrame['entity.ItemFrame.name'/23208, l='MpServer', x=87.03, y=142.50, z=216.50], EntityCow['牛'/169, l='MpServer', x=13.50, y=76.00, z=294.79], EntitySkeleton['骷髅'/139432, l='MpServer', x=39.50, y=26.00, z=286.50], EntitySkeleton['骷髅'/139433, l='MpServer', x=38.50, y=26.00, z=286.50], EntityCow['牛'/172, l='MpServer', x=23.15, y=63.00, z=151.53], EntityCow['牛'/173, l='MpServer', x=14.00, y=69.00, z=208.47], EntityHorse['马'/174, l='MpServer', x=28.74, y=65.00, z=229.29], EntitySquid['鱿鱼'/138431, l='MpServer', x=44.40, y=61.23, z=152.56], EntitySquid['鱿鱼'/138428, l='MpServer', x=34.40, y=49.00, z=208.44], EntityItemFrame['entity.ItemFrame.name'/23235, l='MpServer', x=87.03, y=143.50, z=216.50], EntityHorse['马'/195, l='MpServer', x=33.19, y=72.00, z=159.70], EntityPig['猪'/196, l='MpServer', x=32.90, y=72.00, z=165.37], EntityCow['牛'/197, l='MpServer', x=34.66, y=71.00, z=166.21], EntityCow['牛'/198, l='MpServer', x=45.60, y=70.00, z=166.84], EntityPig['猪'/199, l='MpServer', x=35.54, y=72.00, z=187.75], EntitySkeleton['骷髅'/122056, l='MpServer', x=44.96, y=54.00, z=231.45], EntityBat['蝙蝠'/136904, l='MpServer', x=24.50, y=55.10, z=286.25], EntityItemFrame['entity.ItemFrame.name'/26323, l='MpServer', x=85.03, y=142.50, z=212.50], GoatEntity['Goat'/214, l='MpServer', x=53.70, y=72.00, z=179.50], EntityCow['牛'/215, l='MpServer', x=57.19, y=74.00, z=182.84], EntityHorse['马'/216, l='MpServer', x=42.00, y=73.00, z=182.18], EntityZombie['僵尸'/219, l='MpServer', x=63.70, y=61.00, z=244.70], EntityMinecartEmpty['entity.MinecartRideable.name'/220, l='MpServer', x=57.49, y=72.00, z=241.51], EntityMinecartEmpty['entity.MinecartRideable.name'/221, l='MpServer', x=57.49, y=76.00, z=241.51], EntityMinecartEmpty['entity.MinecartRideable.name'/223, l='MpServer', x=57.49, y=92.00, z=241.49], EntityMinecartEmpty['entity.MinecartRideable.name'/224, l='MpServer', x=57.49, y=88.00, z=241.49], EntityWitch['女巫'/138978, l='MpServer', x=58.50, y=21.00, z=276.50], EntityMinecartEmpty['entity.MinecartRideable.name'/225, l='MpServer', x=57.49, y=84.00, z=241.49], EntityMinecartEmpty['entity.MinecartRideable.name'/226, l='MpServer', x=57.49, y=80.00, z=241.51], EntityMinecartEmpty['entity.MinecartRideable.name'/227, l='MpServer', x=57.49, y=108.00, z=241.51], EntityMinecartEmpty['entity.MinecartRideable.name'/228, l='MpServer', x=57.49, y=104.00, z=241.51], EntityBat['蝙蝠'/140006, l='MpServer', x=0.26, y=27.37, z=215.20], EntityMinecartEmpty['entity.MinecartRideable.name'/229, l='MpServer', x=57.49, y=100.00, z=241.51], EntityMinecartEmpty['entity.MinecartRideable.name'/230, l='MpServer', x=57.49, y=96.00, z=241.49], EntityZombie['僵尸'/140004, l='MpServer', x=68.50, y=23.00, z=177.50], EntityMinecartEmpty['entity.MinecartRideable.name'/231, l='MpServer', x=57.51, y=124.00, z=241.51], EntityMinecartEmpty['entity.MinecartRideable.name'/232, l='MpServer', x=57.51, y=120.00, z=241.51], EntityCreeper['爬行者'/140010, l='MpServer', x=8.50, y=17.00, z=193.50], EntityMinecartEmpty['entity.MinecartRideable.name'/233, l='MpServer', x=57.49, y=116.00, z=241.49], EntityCreeper['爬行者'/140011, l='MpServer', x=89.50, y=43.00, z=269.50], EntityMinecartEmpty['entity.MinecartRideable.name'/234, l='MpServer', x=57.51, y=112.00, z=241.49], EntityMinecartEmpty['entity.MinecartRideable.name'/235, l='MpServer', x=57.49, y=140.00, z=241.49], EntityMinecartEmpty['entity.MinecartRideable.name'/236, l='MpServer', x=57.51, y=132.00, z=241.51], EntityMinecartEmpty['entity.MinecartRideable.name'/237, l='MpServer', x=57.51, y=128.00, z=241.51], EntityMinecartEmpty['entity.MinecartRideable.name'/238, l='MpServer', x=57.49, y=136.00, z=241.49], EntityBat['蝙蝠'/140012, l='MpServer', x=1.58, y=21.40, z=188.29], EntityCow['牛'/247, l='MpServer', x=70.27, y=80.00, z=137.18], EntityPig['猪'/248, l='MpServer', x=78.39, y=76.00, z=166.00], IndestructibleEntityItem['item.item.tconstruct.kama'/252, l='MpServer', x=68.31, y=79.00, z=222.88], EntityZombie['僵尸'/253, l='MpServer', x=64.30, y=59.00, z=238.99], EntityZombie['僵尸'/254, l='MpServer', x=60.30, y=59.00, z=241.70], GoatEntity['Goat'/260, l='MpServer', x=84.50, y=72.00, z=114.25], EntityItemFrame['entity.ItemFrame.name'/263, l='MpServer', x=87.03, y=140.50, z=213.50], EntityItemFrame['entity.ItemFrame.name'/264, l='MpServer', x=87.03, y=140.50, z=216.50], EntityItemFrame['entity.ItemFrame.name'/265, l='MpServer', x=87.03, y=141.50, z=216.50], EntityItemFrame['entity.ItemFrame.name'/266, l='MpServer', x=87.03, y=141.50, z=213.50], EntityItemFrame['entity.ItemFrame.name'/23310, l='MpServer', x=87.03, y=144.50, z=216.50], EntityCreeper['爬行者'/136979, l='MpServer', x=55.50, y=17.00, z=203.50], EntitySkeleton['骷髅'/140051, l='MpServer', x=68.50, y=41.00, z=171.50], EntityPig['猪'/274, l='MpServer', x=111.61, y=86.00, z=180.53], EntityItemFrame['entity.ItemFrame.name'/24850, l='MpServer', x=85.03, y=140.50, z=216.50], EntityOtherPlayerMP['Bobxu'/31718, l='MpServer', x=50.36, y=69.00, z=229.71], EntityPig['猪'/275, l='MpServer', x=118.30, y=75.00, z=190.51], EntityCreeper['爬行者'/137494, l='MpServer', x=31.50, y=24.00, z=141.50], EntityCreeper['爬行者'/134935, l='MpServer', x=-15.50, y=14.00, z=227.50], EntityZombie['僵尸'/137492, l='MpServer', x=31.55, y=24.00, z=138.01], EntityOtherPlayerMP['Bobxu'/31718, l='MpServer', x=45.92, y=138.00, z=240.70], EntityPig['猪'/282, l='MpServer', x=124.45, y=82.00, z=182.45], EntityPig['猪'/283, l='MpServer', x=127.71, y=82.00, z=182.01], EntityPig['猪'/285, l='MpServer', x=130.76, y=68.00, z=270.55], EntityZombie['僵尸'/137501, l='MpServer', x=30.50, y=24.00, z=139.50], EntityBat['蝙蝠'/139552, l='MpServer', x=39.75, y=40.13, z=164.64], EntityPig['猪'/290, l='MpServer', x=136.27, y=77.00, z=174.18], EntityPig['猪'/291, l='MpServer', x=135.84, y=78.00, z=190.22], EntityPig['猪'/292, l='MpServer', x=135.53, y=72.00, z=214.30], EntityItemFrame['entity.ItemFrame.name'/24869, l='MpServer', x=85.03, y=141.50, z=216.50], EntityHorse['马'/293, l='MpServer', x=134.13, y=72.00, z=242.00], EntityCreeper['爬行者'/137509, l='MpServer', x=35.50, y=20.00, z=200.50], EntityMinecartChest['运输矿车'/295, l='MpServer', x=134.50, y=18.06, z=272.50], EntitySkeleton['骷髅'/140595, l='MpServer', x=77.50, y=27.00, z=177.50], EntityScent['entity.EntityScent.name'/140592, l='MpServer', x=48.50, y=142.50, z=221.00], EntitySkeleton['骷髅'/137521, l='MpServer', x=11.50, y=44.00, z=245.50], EntityItemFrame['entity.ItemFrame.name'/48438, l='MpServer', x=82.50, y=140.50, z=217.03], EntitySkeleton['骷髅'/140597, l='MpServer', x=78.50, y=27.00, z=177.50], EntityOtherPlayerMP['and_potatoes'/89888, l='MpServer', x=65.70, y=140.00, z=238.75], EntityItemFrame['entity.ItemFrame.name'/24892, l='MpServer', x=85.03, y=142.50, z=216.50], EntityZombie['僵尸'/140607, l='MpServer', x=-19.50, y=26.00, z=190.50], EntityItemFrame['entity.ItemFrame.name'/23365, l='MpServer', x=87.03, y=143.50, z=213.50], EntityBat['蝙蝠'/133964, l='MpServer', x=69.28, y=29.00, z=179.36], EntityItemFrame['entity.ItemFrame.name'/24911, l='MpServer', x=85.03, y=143.50, z=216.50], EntityOtherPlayerMP['Bobxu'/31718, l='MpServer', x=92.53, y=68.93, z=224.37], EntityItemFrame['entity.ItemFrame.name'/47447, l='MpServer', x=85.03, y=141.50, z=215.50], EntityBat['蝙蝠'/140634, l='MpServer', x=48.50, y=23.02, z=164.25], EntityBat['蝙蝠'/140633, l='MpServer', x=10.76, y=17.22, z=192.75], EntitySkeleton['骷髅'/133468, l='MpServer', x=30.71, y=62.00, z=220.49], EntityCreeper['爬行者'/133474, l='MpServer', x=29.70, y=65.00, z=228.24], EntityItemFrame['entity.ItemFrame.name'/23400, l='MpServer', x=87.03, y=144.50, z=213.50], EntityItemFrame['entity.ItemFrame.name'/24940, l='MpServer', x=85.03, y=144.50, z=216.50], EntityCreeper['爬行者'/137589, l='MpServer', x=105.50, y=72.00, z=194.50], EntityCreeper['爬行者'/140154, l='MpServer', x=3.50, y=24.00, z=284.50], EntityBat['蝙蝠'/140666, l='MpServer', x=-2.89, y=21.07, z=148.68], EntitySkeleton['骷髅'/140155, l='MpServer', x=2.50, y=24.00, z=280.50], EntityBat['蝙蝠'/140667, l='MpServer', x=-1.14, y=22.66, z=144.71], EntitySkeleton['骷髅'/140156, l='MpServer', x=2.50, y=24.00, z=279.50], EntityBat['蝙蝠'/140668, l='MpServer', x=-0.30, y=21.26, z=155.36], EntityCreeper['爬行者'/140157, l='MpServer', x=0.50, y=24.00, z=280.50], EntitySkeleton['骷髅'/138629, l='MpServer', x=4.77, y=41.00, z=224.52], EntityCreeper['爬行者'/138643, l='MpServer', x=48.50, y=37.00, z=218.50], EntityPlayerSP['RailgunHamster'/400, l='MpServer', x=56.89, y=143.94, z=215.36], EntityWitch['女巫'/134044, l='MpServer', x=59.77, y=22.00, z=190.48], EntityOtherPlayerMP['and_potatoes'/89888, l='MpServer', x=60.64, y=72.00, z=235.46], EntitySpider['蜘蛛'/139177, l='MpServer', x=36.50, y=20.00, z=199.50], EntityItemFrame['entity.ItemFrame.name'/22966, l='MpServer', x=87.03, y=142.50, z=213.50], EntityScent['entity.EntityScent.name'/141243, l='MpServer', x=57.50, y=142.50, z=214.00], EntityCreeper['爬行者'/139196, l='MpServer', x=33.50, y=20.00, z=200.50], EntityCreeper['爬行者'/139197, l='MpServer', x=39.50, y=20.00, z=199.50], EntitySpider['蜘蛛'/139201, l='MpServer', x=100.50, y=72.00, z=186.50], EntityItemFrame['entity.ItemFrame.name'/60868, l='MpServer', x=85.03, y=144.50, z=212.50], EntitySkeleton['骷髅'/140746, l='MpServer', x=103.50, y=72.00, z=185.50], EntityOtherPlayerMP['Bobxu'/31718, l='MpServer', x=88.76, y=71.38, z=214.82], EntityScent['entity.EntityScent.name'/140249, l='MpServer', x=48.50, y=142.50, z=224.00], EntityItemFrame['entity.ItemFrame.name'/25061, l='MpServer', x=85.03, y=140.50, z=213.50], EntityOtherPlayerMP['Bobxu'/31718, l='MpServer', x=40.49, y=70.00, z=219.01], EntitySkeleton['骷髅'/140779, l='MpServer', x=5.50, y=27.00, z=205.50], EntitySkeleton['骷髅'/140776, l='MpServer', x=1.50, y=31.00, z=229.50], EntitySpider['蜘蛛'/140783, l='MpServer', x=82.07, y=15.95, z=164.09], EntityItemFrame['entity.ItemFrame.name'/109038, l='MpServer', x=83.03, y=140.50, z=213.50], EntityItemFrame['entity.ItemFrame.name'/25078, l='MpServer', x=85.03, y=141.50, z=213.50], EntityCreeper['爬行者'/139765, l='MpServer', x=32.50, y=19.00, z=292.50], IndestructibleEntityItem['item.item.tconstruct.crossbow'/118267, l='MpServer', x=46.33, y=72.00, z=222.32], EntityCreeper['爬行者'/140792, l='MpServer', x=73.78, y=14.00, z=149.59], EntityItemFrame['entity.ItemFrame.name'/109053, l='MpServer', x=83.03, y=141.50, z=213.50], EntityZombie['僵尸'/140798, l='MpServer', x=-17.50, y=37.00, z=198.50], EntityItemFrame['entity.ItemFrame.name'/104956, l='MpServer', x=85.03, y=140.50, z=215.50], EntityCreeper['爬行者'/140796, l='MpServer', x=46.18, y=54.00, z=232.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:532)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2739)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:418)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_92, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2374724376 bytes (2264 MB) / 4211081216 bytes (4016 MB) up to 4294967296 bytes (4096 MB)
+	JVM Flags: 11 total; -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Xmn128m -Xmx4096m -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	IntCache: cache: 1, tcache: 0, allocated: 12, tallocated: 96
+	FML: MCP 9.42 Powered by Forge 14.23.4.2739 Optifine OptiFine_1.12.2_HD_U_E1 35 mods loaded, 35 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID                       | Version          | Source                                    | Signature                                |
+	|:--------- |:------------------------ |:---------------- |:----------------------------------------- |:---------------------------------------- |
+	| UCHIJAAAA | minecraft                | 1.12.2           | minecraft.jar                             | None                                     |
+	| UCHIJAAAA | mcp                      | 9.42             | minecraft.jar                             | None                                     |
+	| UCHIJAAAA | FML                      | 8.0.99.99        | forge-1.12.2-14.23.4.2739.jar             | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| UCHIJAAAA | forge                    | 14.23.4.2739     | forge-1.12.2-14.23.4.2739.jar             | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| UCHIJAAAA | baubles                  | 1.5.2            | Baubles-1.12-1.5.2.jar                    | None                                     |
+	| UCHIJAAAA | botania                  | r1.10-354        | Botania r1.10-354.jar                     | None                                     |
+	| UCHIJAAAA | buildcraftlib            | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcraftcore           | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcraftbuilders       | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcraftenergy         | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcraftfactory        | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcraftrobotics       | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcrafttransport      | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcraftsilicon        | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | ic2                      | 2.8.90-ex112     | industrialcraft-2-2.8.90-ex112.jar        | de041f9f6187debbc77034a344134053277aa3b0 |
+	| UCHIJAAAA | jei                      | 4.11.0.202       | jei_1.12.2-4.11.0.202.jar                 | None                                     |
+	| UCHIJAAAA | forestry                 | 5.8.0.311        | forestry_1.12.2-5.8.0.311.jar             | None                                     |
+	| UCHIJAAAA | buildcraftcompat         | 7.99.14          | buildcraft-compat-7.99.14.jar             | None                                     |
+	| UCHIJAAAA | codechickenlib           | 3.1.6.339        | CodeChickenLib-1.12.2.jar                 | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| UCHIJAAAA | extendedrenderer         | v1.0             | coroutil-1.12.1-1.2.11.jar                | None                                     |
+	| UCHIJAAAA | coroutil                 | 1.12.1-1.2.11    | coroutil-1.12.1-1.2.11.jar                | None                                     |
+	| UCHIJAAAA | configmod                | v1.0             | coroutil-1.12.1-1.2.11.jar                | None                                     |
+	| UCHIJAAAA | forgelin                 | 1.7.4            | Forgelin-1.7.4.jar                        | None                                     |
+	| UCHIJAAAA | waila                    | 1.8.26           | Hwyla-1.8.26-B41_1.12.2.jar               | None                                     |
+	| UCHIJAAAA | teslacorelib             | 1.0.15           | tesla-core-lib-1.12.2-1.0.15.jar          | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| UCHIJAAAA | industrialforegoing      | 1.12.2-1.12.2    | industrialforegoing-1.12.2-1.10.3-181.jar | None                                     |
+	| UCHIJAAAA | infernalmobs             | 1.7.5            | InfernalMobs-1.12.2.jar                   | None                                     |
+	| UCHIJAAAA | llibrary                 | 1.7.14           | llibrary-1.7.14-1.12.2.jar                | b9f30a813bee3b9dd5652c460310cfcd54f6b7ec |
+	| UCHIJAAAA | jurassicraft             | 2.1.5            | JurassiCraft-1.12.2-2.1.5.jar             | None                                     |
+	| UCHIJAAAA | mantle                   | 1.12-1.3.2.24    | Mantle-1.12-1.3.2.24.jar                  | None                                     |
+	| UCHIJAAAA | nei                      | 2.4.1            | Not-Enough-Items-1.12.2-Recommended.jar   | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| UCHIJAAAA | tconstruct               | 1.12.2-2.10.1.87 | TConstruct-1.12.2-2.10.1.87.jar           | None                                     |
+	| UCHIJAAAA | yarrmateys_cutemobmodels | 1.0.16           | YarrCuteMobModelsRemake-1.0.16-1.12.0.jar | None                                     |
+	| UCHIJAAAA | zombieawareness          | 1.12.1-1.11.14   | zombieawareness-1.12.1-1.11.14.jar        | None                                     |
+	| UCHIJAAAA | teslacorelib_registries  | 1.0.15           | tesla-core-lib-1.12.2-1.0.15.jar          | None                                     |
+
+	Loaded coremods (and transformers): 
+ForgelinPlugin (Forgelin-1.7.4.jar)
+  
+llibrary (llibrary-core-1.0.6-1.12.2.jar)
+  net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+  net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+	GL info: ' Vendor: 'Intel' Version: '4.5.0 - Build 23.20.16.4973' Renderer: 'Intel(R) HD Graphics 530'
+	Pulsar/tconstruct loaded Pulses: 
+		- TinkerCommons (Enabled/Forced)
+		- TinkerWorld (Enabled/Not Forced)
+		- TinkerTools (Enabled/Not Forced)
+		- TinkerHarvestTools (Enabled/Forced)
+		- TinkerMeleeWeapons (Enabled/Forced)
+		- TinkerRangedWeapons (Enabled/Forced)
+		- TinkerModifiers (Enabled/Forced)
+		- TinkerSmeltery (Enabled/Not Forced)
+		- TinkerGadgets (Enabled/Not Forced)
+		- TinkerOredict (Enabled/Forced)
+		- TinkerIntegration (Enabled/Forced)
+		- TinkerFluids (Enabled/Forced)
+		- TinkerMaterials (Enabled/Forced)
+		- TinkerModelRegister (Enabled/Forced)
+		- wailaIntegration (Enabled/Not Forced)
+
+	Launched Version: HMCL 3.1.77
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) HD Graphics 530 GL version 4.5.0 - Build 23.20.16.4973, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge,LiteLoader'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-6820HK CPU @ 2.70GHz
+	OptiFine Version: OptiFine_1.12.2_HD_U_E1
+	OptiFine Build: 20180625-172025
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.5.0 - Build 23.20.16.4973
+	OpenGlRenderer: Intel(R) HD Graphics 530
+	OpenGlVendor: Intel
+	CpuCount: 8
