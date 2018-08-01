@@ -246,3 +246,92 @@ com.google.gson.JsonSyntaxException: Expected item to be an item, was unknown st
 [01:20:56] [Server thread/INFO]: Unloading dimension 0
 [01:20:57] [Server thread/INFO]: Applying holder lookups
 [01:20:57] [Server thread/INFO]: Holder lookups applied
+[01:21:30] [Server thread/INFO]: Starting integrated minecraft server version 1.12.2
+[01:21:30] [Server thread/INFO]: Generating keypair
+[01:21:31] [Server thread/INFO]: Injecting existing registry data into this server instance
+[01:21:32] [Server thread/INFO]: Applying holder lookups
+[01:21:32] [Server thread/INFO]: Holder lookups applied
+[01:21:32] [Server thread/INFO]: Loading dimension 0 (魔法生存) (net.minecraft.server.integrated.IntegratedServer@2487fa28)
+[01:21:32] [Server thread/ERROR]: Parsing error loading built-in advancement buildcraftcore:goggles
+com.google.gson.JsonSyntaxException: Expected item to be an item, was unknown string 'buildcraftcore:goggles'
+	at net.minecraft.util.JsonUtils.func_188172_b(SourceFile:124) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188180_i(SourceFile:135) ~[rc.class:?]
+	at net.minecraft.advancements.DisplayInfo.func_193221_a(DisplayInfo.java:133) ~[r.class:?]
+	at net.minecraft.advancements.DisplayInfo.func_192294_a(DisplayInfo.java:111) ~[r.class:?]
+	at net.minecraft.advancements.Advancement$Builder.func_192059_a(SourceFile:202) ~[i$a.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:50) ~[ns$1.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:46) ~[ns$1.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at net.minecraft.util.JsonUtils.func_188173_a(SourceFile:492) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_193839_a(SourceFile:532) ~[rc.class:?]
+	at net.minecraftforge.common.ForgeHooks.lambda$loadAdvancements$0(ForgeHooks.java:1356) ~[ForgeHooks.class:?]
+	at net.minecraftforge.common.crafting.CraftingHelper.findFiles(CraftingHelper.java:822) [CraftingHelper.class:?]
+	at net.minecraftforge.common.ForgeHooks.loadAdvancements(ForgeHooks.java:1338) [ForgeHooks.class:?]
+	at net.minecraftforge.common.ForgeHooks.loadAdvancements(ForgeHooks.java:1312) [ForgeHooks.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192779_a(AdvancementManager.java:69) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.<init>(AdvancementManager.java:60) [ns.class:?]
+	at net.minecraft.world.WorldServer.func_175643_b(WorldServer.java:156) [oo.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71247_a(IntegratedServer.java:95) [chd.class:?]
+	at net.minecraft.server.integrated.IntegratedServer.func_71197_b(IntegratedServer.java:209) [chd.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_92]
+[01:21:32] [Server thread/INFO]: Loaded 581 advancements
+[01:21:32] [Server thread/INFO]: Loading dimension -1 (魔法生存) (net.minecraft.server.integrated.IntegratedServer@2487fa28)
+[01:21:32] [Server thread/INFO]: Loading dimension 1 (魔法生存) (net.minecraft.server.integrated.IntegratedServer@2487fa28)
+[01:21:32] [Server thread/INFO]: Preparing start region for level 0
+[01:21:33] [Server thread/INFO]: Preparing spawn area: 59%
+[01:21:34] [Server thread/INFO]: Baking listener list for IEventState with 0 listeners
+[01:21:34] [Server thread/INFO]: [CoroUtil.forge.CULog:log:14]: CoroUtil being reinitialized
+[01:21:34] [Server thread/INFO]: Unloading dimension -1
+[01:21:34] [Server thread/INFO]: Unloading dimension 1
+[01:21:34] [Server thread/INFO]: Changing view distance to 8, from 10
+[01:21:34] [Netty Local Client IO #3/INFO]: Server protocol version 2
+[01:21:34] [Netty Server IO #9/INFO]: Client protocol version 2
+[01:21:34] [Netty Server IO #9/INFO]: Client attempting to join with 35 mods : minecraft@1.12.2,industrialforegoing@1.12.2-1.12.2,tconstruct@1.12.2-2.10.1.87,buildcraftlib@7.99.17,extendedrenderer@v1.0,baubles@1.5.2,buildcraftsilicon@7.99.17,yarrmateys_cutemobmodels@1.0.16,buildcraftenergy@7.99.17,configmod@v1.0,jei@4.11.0.202,buildcrafttransport@7.99.17,botania@r1.10-354,nei@2.4.1,teslacorelib_registries@1.0.15,ic2@2.8.90-ex112,mantle@1.12-1.3.2.24,buildcraftbuilders@7.99.17,mcp@9.42,buildcraftfactory@7.99.17,teslacorelib@1.0.15,zombieawareness@1.12.1-1.11.14,FML@8.0.99.99,forgelin@1.7.4,coroutil@1.12.1-1.2.11,llibrary@1.7.14,buildcraftcompat@7.99.14,waila@1.8.26,jurassicraft@2.1.5,forge@14.23.4.2739,codechickenlib@3.1.6.339,buildcraftcore@7.99.17,buildcraftrobotics@7.99.17,forestry@5.8.0.311,infernalmobs@1.7.5
+[01:21:34] [Netty Local Client IO #3/INFO]: [Netty Local Client IO #3] Client side modded connection established
+[01:21:34] [Server thread/INFO]: Baking listener list for IEventState with 1 listeners
+[01:21:34] [Server thread/INFO]: [Server thread] Server side modded connection established
+[01:21:34] [Server thread/INFO]: RailgunHamster[local:E:68e83139] logged in with entity id 705793 at (98.68346598318038, 147.0, 212.22236480016323)
+[01:21:34] [Server thread/INFO]: RailgunHamster加入了游戏
+[01:21:34] [Server thread/INFO]: Player EntityPlayerMP['RailgunHamster'/705793, l='魔法生存', x=98.68, y=147.00, z=212.22] connected. Sending ping
+[01:21:36] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2046ms behind, skipping 40 tick(s)
+[01:21:36] [Server thread/INFO]: Saving and pausing game...
+[01:21:36] [Netty Local Client IO #3/INFO]: Received server authentication msg. Remote sync will be activated
+[01:21:36] [Server thread/INFO]: Saving chunks for level '魔法生存'/overworld
+[01:21:36] [main/INFO]: Loaded 375 advancements
+[01:21:38] [Thread-47/INFO]: [CHAT] WARNING: BuildCraft 7.99.17 is in ALPHA!
+[01:21:38] [Thread-47/INFO]: [CHAT]   Report BuildCraft bugs you find here
+[01:21:38] [Thread-47/INFO]: [CHAT]   and include the BuildCraft version 7.99.17 in the description
+[01:21:38] [Thread-47/INFO]: [CHAT]   If you have performance problems then try disabling
+[01:21:38] [Thread-47/INFO]: [CHAT] everything in the BuildCraft perfomance config section.
+[01:22:45] [Server thread/INFO]: Saving and pausing game...
+[01:22:45] [Server thread/INFO]: Saving chunks for level '魔法生存'/overworld
+[01:26:17] [Server thread/INFO]: Saving and pausing game...
+[01:26:17] [Server thread/INFO]: Saving chunks for level '魔法生存'/overworld
+[01:33:26] [Server thread/INFO]: Saving and pausing game...
+[01:33:26] [Server thread/INFO]: Saving chunks for level '魔法生存'/overworld
+[01:44:44] [Server thread/INFO]: Saving and pausing game...
+[01:44:44] [Server thread/INFO]: Saving chunks for level '魔法生存'/overworld
+[01:49:26] [main/INFO]: Loaded 375 advancements
+[02:01:36] [Server thread/INFO]: Saving and pausing game...
+[02:01:36] [Server thread/INFO]: Saving chunks for level '魔法生存'/overworld
+[02:03:35] [Server thread/INFO]: RailgunHamster取得了进度[Free Power!]
+[02:03:35] [main/INFO]: [CHAT] RailgunHamster取得了进度[Free Power!]
+[02:03:35] [main/INFO]: Loaded 375 advancements
+[02:25:10] [Server thread/INFO]: Saving and pausing game...
+[02:25:10] [Server thread/INFO]: Saving chunks for level '魔法生存'/overworld
+[02:25:10] [Server thread/INFO]: Stopping server
+[02:25:10] [Server thread/INFO]: Saving players
+[02:25:10] [Server thread/INFO]: RailgunHamster lost connection: 连接中止
+[02:25:10] [Server thread/INFO]: RailgunHamster退出了游戏
+[02:25:10] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[02:25:10] [Server thread/INFO]: Saving worlds
+[02:25:10] [Server thread/INFO]: Saving chunks for level '魔法生存'/overworld
+[02:25:11] [Server thread/INFO]: Unloading dimension 0
+[02:25:12] [Server thread/INFO]: Applying holder lookups
+[02:25:12] [Server thread/INFO]: Holder lookups applied
+[02:25:16] [main/INFO]: LiteLoader is shutting down, shutting down core providers and syncing configuration
+[02:25:16] [main/INFO]: Baking listener list for ShutdownObserver with 3 listeners
+[02:25:16] [main/INFO]: Stopping!
+[02:25:16] [main/INFO]: SoundSystem shutting down...
+[02:25:16] [main/WARN]: Author: Paul Lamb, www.paulscode.com

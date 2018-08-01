@@ -247,3 +247,7 @@
 [01:17:32] [Server thread/INFO]: Baking listener list for IEventState with 1 listeners
 [01:20:39] [Server thread/INFO]: Baking listener list for IEventState with 0 listeners
 [01:20:40] [Server thread/INFO]: Baking listener list for IEventState with 1 listeners
+[01:21:34] [Server thread/INFO]: Baking listener list for IEventState with 0 listeners
+[01:21:34] [Server thread/INFO]: Baking listener list for IEventState with 1 listeners
+[02:25:16] [main/INFO]: LiteLoader is shutting down, shutting down core providers and syncing configuration
+[02:25:16] [main/INFO]: Baking listener list for ShutdownObserver with 3 listeners
