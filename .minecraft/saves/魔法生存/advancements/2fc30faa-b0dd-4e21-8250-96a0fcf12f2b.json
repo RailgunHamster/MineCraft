@@ -237,6 +237,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/red_sandstone": {
+    "criteria": {
+      "has_sand": "2018-08-04 21:34:46 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/wooden_shovel": {
     "criteria": {
       "has_stick": "2018-07-24 20:10:03 +0800"
@@ -333,6 +339,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_at_least_9_emerald": "2018-08-03 16:50:52 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/gray_wool": {
     "criteria": {
       "has_white_wool": "2018-07-24 19:48:12 +0800"
@@ -413,6 +425,12 @@
   "minecraft:recipes/misc/iron_ingot_from_block": {
     "criteria": {
       "has_the_recipe": "2018-07-24 21:13:44 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/trapped_chest": {
+    "criteria": {
+      "has_tripwire_hook": "2018-08-04 21:42:07 +0800"
     },
     "done": true
   },
@@ -518,6 +536,12 @@
   "minecraft:recipes/redstone/tnt": {
     "criteria": {
       "has_gunpowder": "2018-08-01 00:10:20 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/emerald": {
+    "criteria": {
+      "has_the_recipe": "2018-08-03 16:50:52 +0800"
     },
     "done": true
   },
@@ -925,6 +949,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/trade": {
+    "criteria": {
+      "traded": "2018-08-03 16:50:48 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/white_carpet": {
     "criteria": {
       "has_white_wool": "2018-07-24 19:48:12 +0800"
@@ -1098,7 +1128,10 @@
   },
   "buildcraftcore:gears": {
     "criteria": {
-      "gear_wood": "2018-08-02 01:49:26 +0800"
+      "gear_iron": "2018-08-04 21:23:15 +0800",
+      "gear_stone": "2018-08-02 11:56:20 +0800",
+      "gear_wood": "2018-08-02 01:49:26 +0800",
+      "gear_gold": "2018-08-04 21:23:27 +0800"
     },
     "done": false
   },
@@ -1207,6 +1240,12 @@
   "minecraft:recipes/combat/arrow": {
     "criteria": {
       "has_flint": "2018-07-24 19:58:41 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab": {
+    "criteria": {
+      "has_stone": "2018-08-03 20:47:48 +0800"
     },
     "done": true
   },
@@ -1435,6 +1474,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/stone_button": {
+    "criteria": {
+      "has_stone": "2018-08-03 20:47:48 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/iron_chestplate": {
     "criteria": {
       "has_iron_ingot": "2018-07-24 19:48:12 +0800"
@@ -1585,6 +1630,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/book": {
+    "criteria": {
+      "has_paper": "2018-08-03 17:20:02 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/nether_brick_fence": {
     "criteria": {
       "has_nether_brick": "2018-08-01 00:06:30 +0800"
@@ -1630,6 +1681,12 @@
   "minecraft:recipes/building_blocks/brown_stained_glass": {
     "criteria": {
       "has_glass": "2018-08-02 00:02:14 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_pressure_plate": {
+    "criteria": {
+      "has_stone": "2018-08-03 20:47:48 +0800"
     },
     "done": true
   },
@@ -1744,6 +1801,12 @@
   "minecraft:recipes/transportation/tnt_minecart": {
     "criteria": {
       "has_minecart": "2018-08-01 00:21:36 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stonebrick": {
+    "criteria": {
+      "has_stone": "2018-08-03 20:47:48 +0800"
     },
     "done": true
   },
