@@ -1,0 +1,186 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  ForgelinPlugin (Forgelin-1.7.4.jar)
+  llibrary (llibrary-core-1.0.6-1.12.2.jar)
+Contact their authors BEFORE contacting forge
+
+// This is a token for 1 free hug. Redeem at your nearest Mojangsta: [~~HUG~~]
+
+Time: 8/7/18 5:05 PM
+Description: Updating screen events
+
+java.lang.IndexOutOfBoundsException: Index: 64, Size: 46
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at net.minecraft.inventory.Container.func_184996_a(Container.java:356)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.func_187098_a(PlayerControllerMP.java:566)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_184098_a(GuiContainer.java:638)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146983_a(GuiContainer.java:671)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_73869_a(GuiContainer.java:648)
+	at net.minecraft.client.gui.GuiScreen.func_146282_l(GuiScreen.java:558)
+	at net.minecraft.client.gui.GuiScreen.func_146269_k(GuiScreen.java:512)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1757)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1096)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at net.minecraft.inventory.Container.func_184996_a(Container.java:356)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.func_187098_a(PlayerControllerMP.java:566)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_184098_a(GuiContainer.java:638)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146983_a(GuiContainer.java:671)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_73869_a(GuiContainer.java:648)
+	at net.minecraft.client.gui.GuiScreen.func_146282_l(GuiScreen.java:558)
+	at net.minecraft.client.gui.GuiScreen.func_146269_k(GuiScreen.java:512)
+
+-- Affected screen --
+Details:
+	Screen name: ~~ERROR~~ NullPointerException: null
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['RailgunHamster'/537, l='MpServer', x=81.76, y=140.00, z=213.85]]
+	Chunk stats: MultiplayerChunkCache: 289, 289
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (15,64,262), Chunk: (at 15,4,6 in 0,16; contains blocks 0,0,256 to 15,255,271), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 4839221 game time, 5480569 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 45 total; [IndestructibleEntityItem['item.item.tconstruct.hammer'/714010, l='MpServer', x=91.15, y=69.00, z=220.14], EntityPlayerSP['RailgunHamster'/537, l='MpServer', x=81.76, y=140.00, z=213.85], EntityPig['猪'/280, l='MpServer', x=80.45, y=75.00, z=178.87], EntityCreeper['爬行者'/773154, l='MpServer', x=53.50, y=24.00, z=238.50], EntityItem['item.tile.sapling.oak'/774439, l='MpServer', x=45.67, y=153.00, z=203.68], EntityItem['item.tile.sapling.oak'/771124, l='MpServer', x=47.05, y=145.00, z=203.85], EntityCow['牛'/321, l='MpServer', x=107.77, y=83.00, z=169.48], EntityScent['entity.EntityScent.name'/777038, l='MpServer', x=82.50, y=144.50, z=216.00], EntityPig['猪'/326, l='MpServer', x=122.42, y=84.00, z=160.77], EntityPig['猪'/327, l='MpServer', x=125.78, y=83.00, z=180.49], EntityPig['猪'/328, l='MpServer', x=127.56, y=76.00, z=200.41], EntityItem['item.tile.sapling.oak'/772416, l='MpServer', x=34.96, y=80.00, z=209.13], EntityPig['猪'/334, l='MpServer', x=129.50, y=81.00, z=174.78], EntityPig['猪'/335, l='MpServer', x=142.49, y=76.00, z=185.70], EntityPig['猪'/336, l='MpServer', x=131.45, y=80.00, z=177.26], EntityPig['猪'/337, l='MpServer', x=137.23, y=72.00, z=204.62], EntityCow['牛'/339, l='MpServer', x=142.45, y=68.00, z=227.51], EntityMinecartChest['运输矿车'/340, l='MpServer', x=134.50, y=18.06, z=272.50], EntityItem['item.tile.sapling.oak'/776031, l='MpServer', x=38.32, y=144.00, z=212.63], IndestructibleEntityItem['item.item.tconstruct.rapier'/714077, l='MpServer', x=91.52, y=69.00, z=220.52], EntityScent['entity.EntityScent.name'/778337, l='MpServer', x=80.50, y=140.50, z=213.00], EntityItem['item.tile.sapling.oak'/775538, l='MpServer', x=49.54, y=157.00, z=200.66], IndestructibleEntityItem['item.item.tconstruct.pickaxe'/702878, l='MpServer', x=91.25, y=69.00, z=220.60], EntityCow['牛'/157, l='MpServer', x=3.32, y=77.00, z=138.54], EntityCow['牛'/159, l='MpServer', x=6.85, y=76.00, z=136.47], EntityHorse['马'/161, l='MpServer', x=1.89, y=72.00, z=273.95], IndestructibleEntityItem['item.item.tconstruct.pickaxe'/702892, l='MpServer', x=90.89, y=69.00, z=219.50], EntityItemFrame['entity.ItemFrame.name'/778661, l='MpServer', x=81.03, y=140.50, z=212.50], EntityHorse['马'/177, l='MpServer', x=48.56, y=72.00, z=172.54], EntityPig['猪'/178, l='MpServer', x=33.09, y=72.00, z=175.29], IndestructibleEntityItem['item.item.tconstruct.pickaxe'/702904, l='MpServer', x=91.90, y=69.00, z=219.75], IndestructibleEntityItem['item.item.tconstruct.frypan'/714162, l='MpServer', x=92.06, y=69.00, z=220.87], EntityScent['entity.EntityScent.name'/777930, l='MpServer', x=84.50, y=140.50, z=216.00], EntityItem['item.tile.sapling.oak'/775129, l='MpServer', x=47.82, y=146.00, z=206.92], GoatEntity['Goat'/773843, l='MpServer', x=88.43, y=71.00, z=111.49], EntityPig['猪'/749783, l='MpServer', x=146.20, y=69.00, z=236.40], EntityCow['牛'/749782, l='MpServer', x=156.55, y=69.00, z=223.45], EntityPig['猪'/749781, l='MpServer', x=153.55, y=72.00, z=181.26], EntityScent['entity.EntityScent.name'/777706, l='MpServer', x=84.50, y=144.50, z=216.00], EntityCow['牛'/231, l='MpServer', x=61.15, y=80.00, z=141.52], EntityScent['entity.EntityScent.name'/778476, l='MpServer', x=56.00, y=151.00, z=214.00], IndestructibleEntityItem['item.item.tconstruct.pickaxe'/722400, l='MpServer', x=89.62, y=69.00, z=223.62], EntityPig['猪'/236, l='MpServer', x=61.80, y=74.00, z=171.57], IndestructibleEntityItem['item.item.tconstruct.pickaxe'/617191, l='MpServer', x=89.30, y=69.00, z=223.51], IndestructibleEntityItem['item.item.tconstruct.pickaxe'/713969, l='MpServer', x=91.44, y=69.00, z=220.58]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:532)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2739)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:418)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_92, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2678282264 bytes (2554 MB) / 4294967296 bytes (4096 MB) up to 4294967296 bytes (4096 MB)
+	JVM Flags: 11 total; -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Xmn128m -Xmx4096m -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	IntCache: cache: 0, tcache: 1, allocated: 15, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.4.2739 Optifine OptiFine_1.12.2_HD_U_E1 35 mods loaded, 35 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID                       | Version          | Source                                    | Signature                                |
+	|:--------- |:------------------------ |:---------------- |:----------------------------------------- |:---------------------------------------- |
+	| UCHIJAAAA | minecraft                | 1.12.2           | minecraft.jar                             | None                                     |
+	| UCHIJAAAA | mcp                      | 9.42             | minecraft.jar                             | None                                     |
+	| UCHIJAAAA | FML                      | 8.0.99.99        | forge-1.12.2-14.23.4.2739.jar             | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| UCHIJAAAA | forge                    | 14.23.4.2739     | forge-1.12.2-14.23.4.2739.jar             | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| UCHIJAAAA | baubles                  | 1.5.2            | Baubles-1.12-1.5.2.jar                    | None                                     |
+	| UCHIJAAAA | botania                  | r1.10-354        | Botania r1.10-354.jar                     | None                                     |
+	| UCHIJAAAA | buildcraftlib            | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcraftcore           | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcraftbuilders       | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcraftenergy         | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcraftfactory        | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcraftrobotics       | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcrafttransport      | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | buildcraftsilicon        | 7.99.17          | buildcraft-7.99.17.jar                    | None                                     |
+	| UCHIJAAAA | ic2                      | 2.8.90-ex112     | industrialcraft-2-2.8.90-ex112.jar        | de041f9f6187debbc77034a344134053277aa3b0 |
+	| UCHIJAAAA | jei                      | 4.11.0.202       | jei_1.12.2-4.11.0.202.jar                 | None                                     |
+	| UCHIJAAAA | forestry                 | 5.8.0.311        | forestry_1.12.2-5.8.0.311.jar             | None                                     |
+	| UCHIJAAAA | buildcraftcompat         | 7.99.14          | buildcraft-compat-7.99.14.jar             | None                                     |
+	| UCHIJAAAA | codechickenlib           | 3.1.6.339        | CodeChickenLib-1.12.2.jar                 | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| UCHIJAAAA | extendedrenderer         | v1.0             | coroutil-1.12.1-1.2.11.jar                | None                                     |
+	| UCHIJAAAA | coroutil                 | 1.12.1-1.2.11    | coroutil-1.12.1-1.2.11.jar                | None                                     |
+	| UCHIJAAAA | configmod                | v1.0             | coroutil-1.12.1-1.2.11.jar                | None                                     |
+	| UCHIJAAAA | forgelin                 | 1.7.4            | Forgelin-1.7.4.jar                        | None                                     |
+	| UCHIJAAAA | waila                    | 1.8.26           | Hwyla-1.8.26-B41_1.12.2.jar               | None                                     |
+	| UCHIJAAAA | teslacorelib             | 1.0.15           | tesla-core-lib-1.12.2-1.0.15.jar          | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| UCHIJAAAA | industrialforegoing      | 1.12.2-1.12.2    | industrialforegoing-1.12.2-1.10.3-181.jar | None                                     |
+	| UCHIJAAAA | infernalmobs             | 1.7.5            | InfernalMobs-1.12.2.jar                   | None                                     |
+	| UCHIJAAAA | llibrary                 | 1.7.14           | llibrary-1.7.14-1.12.2.jar                | b9f30a813bee3b9dd5652c460310cfcd54f6b7ec |
+	| UCHIJAAAA | jurassicraft             | 2.1.5            | JurassiCraft-1.12.2-2.1.5.jar             | None                                     |
+	| UCHIJAAAA | mantle                   | 1.12-1.3.2.24    | Mantle-1.12-1.3.2.24.jar                  | None                                     |
+	| UCHIJAAAA | nei                      | 2.4.1            | Not-Enough-Items-1.12.2-Recommended.jar   | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| UCHIJAAAA | tconstruct               | 1.12.2-2.10.1.87 | TConstruct-1.12.2-2.10.1.87.jar           | None                                     |
+	| UCHIJAAAA | yarrmateys_cutemobmodels | 1.0.16           | YarrCuteMobModelsRemake-1.0.16-1.12.0.jar | None                                     |
+	| UCHIJAAAA | zombieawareness          | 1.12.1-1.11.14   | zombieawareness-1.12.1-1.11.14.jar        | None                                     |
+	| UCHIJAAAA | teslacorelib_registries  | 1.0.15           | tesla-core-lib-1.12.2-1.0.15.jar          | None                                     |
+
+	Loaded coremods (and transformers): 
+ForgelinPlugin (Forgelin-1.7.4.jar)
+  
+llibrary (llibrary-core-1.0.6-1.12.2.jar)
+  net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+  net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+	GL info: ' Vendor: 'Intel' Version: '4.5.0 - Build 23.20.16.4973' Renderer: 'Intel(R) HD Graphics 530'
+	Pulsar/tconstruct loaded Pulses: 
+		- TinkerCommons (Enabled/Forced)
+		- TinkerWorld (Enabled/Not Forced)
+		- TinkerTools (Enabled/Not Forced)
+		- TinkerHarvestTools (Enabled/Forced)
+		- TinkerMeleeWeapons (Enabled/Forced)
+		- TinkerRangedWeapons (Enabled/Forced)
+		- TinkerModifiers (Enabled/Forced)
+		- TinkerSmeltery (Enabled/Not Forced)
+		- TinkerGadgets (Enabled/Not Forced)
+		- TinkerOredict (Enabled/Forced)
+		- TinkerIntegration (Enabled/Forced)
+		- TinkerFluids (Enabled/Forced)
+		- TinkerMaterials (Enabled/Forced)
+		- TinkerModelRegister (Enabled/Forced)
+		- wailaIntegration (Enabled/Not Forced)
+
+	Launched Version: HMCL 3.1.77
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) HD Graphics 530 GL version 4.5.0 - Build 23.20.16.4973, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge,LiteLoader'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: 简体中文 (中国)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-6820HK CPU @ 2.70GHz
+	OptiFine Version: OptiFine_1.12.2_HD_U_E1
+	OptiFine Build: 20180625-172025
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: (internal)
+	OpenGlVersion: 4.5.0 - Build 23.20.16.4973
+	OpenGlRenderer: Intel(R) HD Graphics 530
+	OpenGlVendor: Intel
+	CpuCount: 8
