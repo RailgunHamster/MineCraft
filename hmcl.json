@@ -19,7 +19,7 @@
         "javaDir": "",
         "precalledCommand": "",
         "serverIp": "",
-        "java": "1.8.0_92",
+        "java": "Default",
         "wrapper": "",
         "fullscreen": false,
         "noJVMArgs": false,
@@ -64,13 +64,13 @@
   },
   "accounts": [
     {
-      "clientToken": "ab1774ed966b4e408d7d25f264e11cd0",
+      "clientToken": "0468cb4ee265411a955d99e76a3954b0",
       "displayName": "RailgunHamster",
       "userProperties": {
         "preferredLanguage": "zh-tw",
         "registrationCountry": "CN"
       },
-      "accessToken": "72e07fc01e654167b1f7f483ccae53fd",
+      "accessToken": "9b8c25ccd9b0408586ba0f415d0270c2",
       "type": "yggdrasil",
       "uuid": "2fc30faab0dd4e21825096a0fcf12f2b",
       "userid": "566ec74641545d325645c7c83b748f3c",
