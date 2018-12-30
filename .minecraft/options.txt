@@ -11,7 +11,7 @@ bobView:true
 anaglyph3d:false
 maxFps:260
 fboEnable:true
-difficulty:3
+difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:true
@@ -102,6 +102,10 @@ key_key.vehicle_5.switch:7:CONTROL
 key_key.vehicle_6.switch:8:CONTROL
 key_key.vehicle_7.switch:9:CONTROL
 key_key.vehicle_8.switch:10:CONTROL
+key_Key.SlashBlade.PS:-98
+key_Key.SlashBlade.SA:47
+key_Key.SlashBlade.LO:42
+key_Key.SlashBlade.CA:29
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0
@@ -110,6 +114,8 @@ key_key.jei.showUses:22
 key_key.jei.recipeBack:14
 key_key.jei.previousPage:201
 key_key.jei.nextPage:209
+key_打开菜单:21
+key_打开兼容性助手:35
 key_waila.keybind.wailaconfig:82
 key_waila.keybind.wailadisplay:79
 key_waila.keybind.liquid:80
