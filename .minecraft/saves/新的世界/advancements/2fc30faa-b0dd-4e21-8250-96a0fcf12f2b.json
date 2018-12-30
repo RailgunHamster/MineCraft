@@ -53,6 +53,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/snow": {
+    "criteria": {
+      "has_snowball": "2018-12-31 05:55:37 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/light_blue_dye_from_lapis_bonemeal": {
     "criteria": {
       "has_lapis": "2018-12-31 05:28:50 +0800"
@@ -80,6 +86,12 @@
   "minecraft:recipes/misc/magenta_dye_from_lapis_red_pink": {
     "criteria": {
       "has_lapis": "2018-12-31 05:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2018-12-31 06:25:55 +0800"
     },
     "done": true
   },
@@ -245,9 +257,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/snow_layer": {
+    "criteria": {
+      "has_snowball": "2018-12-31 05:55:37 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/diorite": {
     "criteria": {
       "has_quartz": "2018-12-31 05:30:05 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_obsidian": "2018-12-31 06:25:04 +0800"
     },
     "done": true
   },
@@ -307,7 +331,9 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
-      "rotten_flesh": "2018-12-31 05:01:53 +0800"
+      "golden_apple": "2018-12-31 05:48:09 +0800",
+      "rotten_flesh": "2018-12-31 05:01:53 +0800",
+      "enchanted_golden_apple": "2018-12-31 05:48:16 +0800"
     },
     "done": false
   },
@@ -383,6 +409,12 @@
     },
     "done": true
   },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2018-12-31 05:52:23 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/stone_button": {
     "criteria": {
       "has_stone": "2018-08-02 10:29:28 +0800"
@@ -407,15 +439,21 @@
     },
     "done": true
   },
-  "minecraft:recipes/tools/golden_shovel": {
+  "minecraft:story/form_obsidian": {
     "criteria": {
-      "has_gold_ingot": "2018-12-31 05:28:51 +0800"
+      "obsidian": "2018-12-31 06:25:04 +0800"
     },
     "done": true
   },
   "minecraft:recipes/combat/iron_helmet": {
     "criteria": {
       "has_iron_ingot": "2018-12-31 05:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/golden_shovel": {
+    "criteria": {
+      "has_gold_ingot": "2018-12-31 05:28:51 +0800"
     },
     "done": true
   },
@@ -492,6 +530,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/gold_block": {
+    "criteria": {
+      "has_at_least_9_gold_ingot": "2018-12-31 05:53:34 +0800"
+    },
+    "done": true
+  },
   "minecraft:story/obtain_armor": {
     "criteria": {
       "iron_leggings": "2018-12-31 05:10:50 +0800"
@@ -522,15 +566,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/transportation/minecart": {
-    "criteria": {
-      "has_iron_ingot": "2018-12-31 05:28:50 +0800"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/furnace": {
     "criteria": {
       "has_cobblestone": "2018-12-31 05:28:19 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/minecart": {
+    "criteria": {
+      "has_iron_ingot": "2018-12-31 05:28:50 +0800"
     },
     "done": true
   },
@@ -540,6 +584,7 @@
       "frozen_river": "2018-12-31 05:34:07 +0800",
       "forest": "2018-08-02 01:17:32 +0800",
       "forest_hills": "2018-12-31 04:51:31 +0800",
+      "ice_mountains": "2018-12-31 05:55:12 +0800",
       "river": "2018-12-31 05:34:02 +0800"
     },
     "done": false
@@ -613,6 +658,12 @@
   "minecraft:recipes/decorations/cobblestone_wall": {
     "criteria": {
       "has_cobblestone": "2018-12-31 05:28:19 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2018-12-31 06:25:04 +0800"
     },
     "done": true
   },
@@ -739,6 +790,8 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "zombie_pigman": "2018-12-31 05:10:41 +0800",
+      "zombie_villager": "2018-12-31 05:56:09 +0800",
+      "magma_cube": "2018-12-31 06:27:51 +0800",
       "skeleton": "2018-12-31 04:59:37 +0800",
       "zombie": "2018-12-31 05:01:25 +0800",
       "spider": "2018-12-31 05:32:24 +0800"
@@ -748,6 +801,12 @@
   "minecraft:recipes/tools/diamond_shovel": {
     "criteria": {
       "has_diamond": "2018-12-31 05:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2018-12-31 06:25:55 +0800"
     },
     "done": true
   },
@@ -856,6 +915,12 @@
   "minecraft:recipes/building_blocks/pink_stained_glass": {
     "criteria": {
       "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_block": {
+    "criteria": {
+      "has_the_recipe": "2018-12-31 05:53:34 +0800"
     },
     "done": true
   },
