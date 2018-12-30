@@ -19,7 +19,7 @@
         "javaDir": "",
         "precalledCommand": "",
         "serverIp": "",
-        "java": "Default",
+        "java": "1.8.0_191",
         "wrapper": "",
         "fullscreen": false,
         "noJVMArgs": false,
@@ -29,7 +29,7 @@
         "gameDir": "",
         "launcherVisibility": 1,
         "gameDirType": 0,
-        "defaultJavaPath": "C:\\Program Files\\Java\\jre1.8.0_92\\bin\\java"
+        "defaultJavaPath": "D:\\program\\jre8\\bin\\java"
       },
       "gameDir": ".minecraft",
       "useRelativePath": true
@@ -64,13 +64,13 @@
   },
   "accounts": [
     {
-      "clientToken": "0468cb4ee265411a955d99e76a3954b0",
+      "clientToken": "36dfb95d234742d99a54effe5a343dd6",
       "displayName": "RailgunHamster",
       "userProperties": {
         "preferredLanguage": "zh-tw",
         "registrationCountry": "CN"
       },
-      "accessToken": "9b8c25ccd9b0408586ba0f415d0270c2",
+      "accessToken": "b8abca5d9510420cbe404bcbbf79dbb0",
       "type": "yggdrasil",
       "uuid": "2fc30faab0dd4e21825096a0fcf12f2b",
       "userid": "566ec74641545d325645c7c83b748f3c",

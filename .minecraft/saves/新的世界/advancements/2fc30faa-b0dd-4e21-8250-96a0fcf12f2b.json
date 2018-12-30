@@ -1,7 +1,19 @@
 {
+  "minecraft:recipes/tools/fishing_rod": {
+    "criteria": {
+      "has_string": "2018-12-31 05:08:25 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/purple_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/bow": {
+    "criteria": {
+      "has_string": "2018-12-31 05:08:25 +0800"
     },
     "done": true
   },
@@ -11,27 +23,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/light_gray_stained_glass": {
+  "minecraft:recipes/building_blocks/string_to_wool": {
     "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/yellow_stained_glass_pane": {
-    "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
+      "has_string": "2018-12-31 05:08:25 +0800"
     },
     "done": true
   },
   "minecraft:recipes/decorations/black_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-08-02 10:28:50 +0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/dark_oak_boat": {
-    "criteria": {
-      "entered_water": "2018-08-02 10:29:08 +0800"
     },
     "done": true
   },
@@ -47,21 +47,16 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cyan_stained_glass": {
+  "minecraft:adventure/kill_a_mob": {
     "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
+      "skeleton": "2018-12-31 04:59:37 +0800"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/red_stained_glass_pane": {
+  "flammpfeil.slashblade:root": {
     "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/white_stained_glass_pane": {
-    "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
+      "useWoodenSword": "2018-12-31 05:08:23 +0800",
+      "attackTheEntity": "2018-12-31 04:59:11 +0800"
     },
     "done": true
   },
@@ -71,25 +66,31 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/stonebrick": {
+  "botania:challenge/root": {
     "criteria": {
-      "has_stone": "2018-08-02 10:29:28 +0800"
+      "flower": "2018-12-31 05:09:13 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_leggings": "2018-12-31 05:10:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2018-12-31 05:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_axe": {
+    "criteria": {
+      "has_diamond": "2018-12-31 05:15:17 +0800"
     },
     "done": true
   },
   "minecraft:recipes/building_blocks/gray_stained_glass": {
-    "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/lime_stained_glass": {
-    "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/pink_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-08-02 10:28:50 +0800"
     },
@@ -103,13 +104,26 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "forest": "2018-08-02 01:17:32 +0800"
+      "forest": "2018-08-02 01:17:32 +0800",
+      "forest_hills": "2018-12-31 04:51:31 +0800"
     },
     "done": false
   },
   "minecraft:recipes/decorations/gray_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2018-12-31 05:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2018-12-31 05:10:51 +0800"
     },
     "done": true
   },
@@ -137,21 +151,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/brown_stained_glass_pane": {
-    "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/glass_pane": {
-    "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/lime_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2018-12-31 05:01:53 +0800"
     },
     "done": true
   },
@@ -167,21 +175,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2018-12-31 05:05:10 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_helmet": "2018-12-31 05:04:37 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/magenta_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-08-02 10:28:50 +0800"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/magenta_stained_glass": {
+  "minecraft:recipes/decorations/light_gray_bed": {
     "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
+      "has_light_gray_wool": "2018-12-31 05:16:04 +0800"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/orange_stained_glass_pane": {
+  "minecraft:recipes/decorations/light_gray_carpet": {
     "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
+      "has_light_gray_wool": "2018-12-31 05:16:04 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/painting": {
+    "criteria": {
+      "has_wool": "2018-12-31 05:16:04 +0800"
     },
     "done": true
   },
@@ -197,15 +223,21 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/stone_button": {
+  "botania:main/flower_pickup": {
     "criteria": {
-      "has_stone": "2018-08-02 10:29:28 +0800"
+      "flower": "2018-12-31 05:09:13 +0800"
     },
     "done": true
   },
   "minecraft:recipes/decorations/cyan_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2018-12-31 05:15:17 +0800"
     },
     "done": true
   },
@@ -221,15 +253,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/light_blue_stained_glass": {
-    "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/stone_slab": {
     "criteria": {
       "has_stone": "2018-08-02 10:29:28 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brown_stained_glass": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
     },
     "done": true
   },
@@ -239,9 +271,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/brown_stained_glass": {
+  "minecraft:adventure/root": {
     "criteria": {
-      "has_glass": "2018-08-02 10:28:50 +0800"
+      "killed_something": "2018-12-31 04:59:37 +0800"
     },
     "done": true
   },
@@ -257,13 +289,219 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/pink_stained_glass": {
+  "minecraft:recipes/building_blocks/clay": {
+    "criteria": {
+      "has_clay_ball": "2018-12-31 05:10:51 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/green_stained_glass": {
     "criteria": {
       "has_glass": "2018-08-02 10:28:50 +0800"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/green_stained_glass": {
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "entered_water": "2018-08-02 10:29:08 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2018-12-31 05:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_gray_stained_glass": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/yellow_stained_glass_pane": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_log": "2018-12-31 05:13:36 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "entered_water": "2018-08-02 10:29:08 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_gray_banner": {
+    "criteria": {
+      "has_light_gray_wool": "2018-12-31 05:16:04 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2018-12-31 05:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2018-12-31 05:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cyan_stained_glass": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_stained_glass_pane": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_stained_glass_pane": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2018-12-31 05:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "zombie_pigman": "2018-12-31 05:10:41 +0800",
+      "skeleton": "2018-12-31 04:59:37 +0800",
+      "zombie": "2018-12-31 05:01:25 +0800"
+    },
+    "done": false
+  },
+  "botania:main/root": {
+    "criteria": {
+      "flower": "2018-12-31 05:09:13 +0800"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "rotten_flesh": "2018-12-31 05:01:53 +0800"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/stonebrick": {
+    "criteria": {
+      "has_stone": "2018-08-02 10:29:28 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lime_stained_glass": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/pink_stained_glass_pane": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tripwire_hook": {
+    "criteria": {
+      "has_string": "2018-12-31 05:08:25 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal_from_bone": {
+    "criteria": {
+      "has_bone": "2018-12-31 04:59:37 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_stained_glass_pane": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/glass_pane": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2018-12-31 05:15:13 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2018-12-31 05:10:51 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/magenta_stained_glass": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2018-12-31 05:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/orange_stained_glass_pane": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2018-12-31 05:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2018-12-31 05:15:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_button": {
+    "criteria": {
+      "has_stone": "2018-08-02 10:29:28 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_blue_stained_glass": {
+    "criteria": {
+      "has_glass": "2018-08-02 10:28:50 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_bricks": {
+    "criteria": {
+      "has_prismarine_shard": "2018-12-31 05:10:51 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pink_stained_glass": {
     "criteria": {
       "has_glass": "2018-08-02 10:28:50 +0800"
     },
@@ -278,12 +516,6 @@
   "minecraft:recipes/decorations/blue_stained_glass_pane": {
     "criteria": {
       "has_glass": "2018-08-02 10:28:50 +0800"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/spruce_boat": {
-    "criteria": {
-      "entered_water": "2018-08-02 10:29:08 +0800"
     },
     "done": true
   }
