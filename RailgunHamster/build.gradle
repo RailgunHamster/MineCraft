@@ -13,6 +13,7 @@ buildscript {
 }
 
 apply plugin: "net.minecraftforge.gradle.forge"
+apply plugin: "kotlin"
 
 sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
 
@@ -45,4 +46,7 @@ repositories {
 
 dependencies {
 	deobfCompile group: "net.shadowfacts", name: "Forgelin", version: forgelin_version
+	// Tests
+	testImplementation "org.junit.jupiter:junit-jupiter-api:${junit_version}"
+	testRuntime "org.junit.jupiter:junit-jupiter-engine:${junit_version}"
 }
