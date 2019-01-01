@@ -1,0 +1,14 @@
+[
+{
+  "modid": "test",
+  "name": "Test",
+  "description": "Test Mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "authorList": ["RailgunHamster"],
+  "credits": "Created by RailgunHamster",
+  "logoFile": "LOGO",
+  "screenshots": [],
+  "dependencies": []
+}
+]

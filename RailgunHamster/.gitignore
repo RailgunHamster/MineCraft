@@ -1,0 +1,15 @@
+.DS_Store
+
+/download
+
+# vscode
+/.vscode
+/.settings
+/.project
+
+# gradle
+/.gradle
+/build
+
+# ForgeGradle
+/run
