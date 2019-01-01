@@ -114,6 +114,7 @@ key_key.jei.showUses:22
 key_key.jei.recipeBack:14
 key_key.jei.previousPage:201
 key_key.jei.nextPage:209
+key_binniecore.key.hold.for.help.tooltips:15
 key_打开菜单:21
 key_打开兼容性助手:35
 key_waila.keybind.wailaconfig:82
