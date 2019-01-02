@@ -3,3 +3,6 @@
 # 特定配置
 .minecraft/versions/科技魔法/hmclversion.cfg
 .hmcl.json
+
+# 平台特定库
+.minecraft/libraries
