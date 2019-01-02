@@ -9,6 +9,7 @@
   "credits": "Created by RailgunHamster",
   "logoFile": "LOGO",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": [],
+  "requiredMods": ["forge"],
 }
 ]
