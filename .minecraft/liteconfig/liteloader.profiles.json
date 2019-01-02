@@ -54,7 +54,7 @@
       "text2speech-1.10.3": true,
       "trove4j-3.0.3": true,
       "vecmath-1.5.2": true,
-      "¿Æ¼¼Ä§·¨": true
+      "ï¿½Æ¼ï¿½Ä§ï¿½ï¿½": true
     },
     "HMCL 3.2.112": {
       "akka-actor_2.11-2.3.3": true,
@@ -75,6 +75,7 @@
       "httpclient-4.3.3": true,
       "httpcore-4.3.2": true,
       "icu4j-core-mojang-51.2": true,
+      "java-objc-bridge-1.0.0": true,
       "jinput-2.0.5": true,
       "jline-3.5.1": true,
       "jna-4.4.0": true,
@@ -86,7 +87,9 @@
       "liteloader-1.12.2-20171128.144431-4": true,
       "log4j-api-2.8.1": true,
       "log4j-core-2.8.1": true,
+      "lwjgl-2.9.2-nightly-20140822": true,
       "lwjgl-2.9.4-nightly-20150209": true,
+      "lwjgl_util-2.9.2-nightly-20140822": true,
       "lwjgl_util-2.9.4-nightly-20150209": true,
       "lzma-0.0.1": true,
       "maven-artifact-3.5.3": true,
@@ -109,7 +112,8 @@
       "text2speech-1.10.3": true,
       "trove4j-3.0.3": true,
       "vecmath-1.5.2": true,
-      "¿Æ¼¼Ä§·¨": true
+      "ç§‘æŠ€é­”æ³•": true,
+      "ï¿½Æ¼ï¿½Ä§ï¿½ï¿½": true
     }
   }
 }
