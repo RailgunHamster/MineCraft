@@ -1,4 +1,4 @@
-package cn.railgunhamster
+package cn.railgunhamster.common.core
 
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent
