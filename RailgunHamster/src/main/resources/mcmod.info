@@ -10,6 +10,6 @@
   "logoFile": "LOGO",
   "screenshots": [],
   "dependencies": [],
-  "requiredMods": ["forge"],
+  "requiredMods": ["forge"]
 }
 ]
