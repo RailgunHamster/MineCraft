@@ -1,1 +1,5 @@
 .DS_Store
+
+# 特定配置
+.minecraft/versions/科技魔法/hmclversion.cfg
+.hmcl.json
