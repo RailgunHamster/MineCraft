@@ -1,7 +1,7 @@
 package cn.railgunhamster.test.common.data
 
 /*
- * 所有常量，方便寻找
+ * 所有常量，方便寻找和引用
  */
 object Constant {
   // MOD information

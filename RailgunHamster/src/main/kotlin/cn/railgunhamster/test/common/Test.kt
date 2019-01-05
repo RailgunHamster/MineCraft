@@ -1,11 +1,11 @@
 package cn.railgunhamster.test.common
-
+/*
+ * forge Mod
+ */
 import net.minecraftforge.fml.common.Mod
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent
-import net.minecraftforge.fml.common.event.FMLInitializationEvent
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent
-import org.apache.logging.log4j.Logger
-
+/*
+ * mine
+ */
 import cn.railgunhamster.test.common.data.Constant
 
 /*
@@ -26,7 +26,7 @@ object Test {
 	 * 所有debug, info, error信息均由此输出
 	 * optional，初始化为null，在preinit中赋值
 	 */
-	var logger: Logger? = null
+	var logger: org.apache.logging.log4j.Logger? = null
 
 	/*
 	 * MC preinit
@@ -39,7 +39,7 @@ object Test {
 	 * 	Discover parts of your mod by using annotation search {@link #getAsmData()}
 	 */
 	@Mod.EventHandler
-	fun OnPreInit(event: FMLPreInitializationEvent) {
+	fun onPreInit(event: net.minecraftforge.fml.common.event.FMLPreInitializationEvent) {
 		// 从event中获取logger信息
 		this.logger = event.getModLog()
 	}
@@ -52,7 +52,7 @@ object Test {
 	 *	Dispatch requests through {@link FMLInterModComms} to other mods, to tell them what you wish them to do.
 	 */
 	@Mod.EventHandler
-	fun OnInit(event: FMLInitializationEvent) {
+	fun onInit(event: net.minecraftforge.fml.common.event.FMLInitializationEvent) {
 		this.logger?.info("init")
 	}
 
@@ -62,7 +62,7 @@ object Test {
 	 * Recommended activities: interact with other mods to establish cross-mod behaviours.
 	 */
 	@Mod.EventHandler
-	fun OnPostInit(event: FMLPostInitializationEvent) {
+	fun onPostInit(event: net.minecraftforge.fml.common.event.FMLPostInitializationEvent) {
 		this.logger?.info("post init");
 	}
 }
