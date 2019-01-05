@@ -1,30 +1,26 @@
-package cn.railgunhamster.common.core
+package cn.railgunhamster.test.common
 
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent
 import net.minecraftforge.fml.common.event.FMLInitializationEvent
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent
-import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.Logger
+
+import cn.railgunhamster.test.common.data.Constant
 
 /*
  * @author RailgunHamster
  * 入口类
  */
 @Mod(
-	modid = Test.MOD_ID,
-	name = Test.NAME,
-	version = Test.VERSION,
-	acceptedMinecraftVersions = Test.MC_VERSION,
-	dependencies = """required:forge@[14.23.4.2749,);""",
-	modLanguageAdapter = "net.shadowfacts.forgelin.KotlinAdapter"
+	modid = Constant.MOD_ID,
+	name = Constant.MOD_NAME,
+	version = Constant.VERSION,
+	acceptedMinecraftVersions = Constant.MC_VERSION,
+	dependencies = Constant.MOD_DEPENDENCIES,
+	modLanguageAdapter = Constant.LANGUAGE_ADAPTER
 )
 object Test {
-	// 字面常量
-	const val NAME			 = "Test"
-	const val MOD_ID 		 = "test"
-	const val VERSION		 = "1.0"
-	const val MC_VERSION = "[1.12.2, 1.13)"
-
 	/*
 	 * Logger
 	 * 所有debug, info, error信息均由此输出
