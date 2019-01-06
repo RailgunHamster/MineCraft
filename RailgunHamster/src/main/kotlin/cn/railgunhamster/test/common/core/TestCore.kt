@@ -9,10 +9,9 @@ import net.minecraftforge.fml.common.Mod
  */
 import cn.railgunhamster.test.common.data.Constant
 import cn.railgunhamster.test.common.core.LogHelper
-
 /*
  * @author RailgunHamster
- * 入口类
+ * 核心，要处理各种init事件
  */
 @Mod(
 	modid                     = Constant.MOD_ID,
@@ -37,7 +36,6 @@ object TestCore {
 		// 从event中获取logger
 		LogHelper.onPreInit(event.getModLog())
 	}
-
 	/*
 	 * MC init
 	 *
@@ -49,7 +47,6 @@ object TestCore {
 	fun onInit(event: net.minecraftforge.fml.common.event.FMLInitializationEvent) {
 		LogHelper.info("init")
 	}
-
 	/*
 	 * MC post init
 	 *

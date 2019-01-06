@@ -1,5 +1,4 @@
 package cn.railgunhamster.test.common.core
-
 /*
  * Configuration
  * Mod
@@ -14,7 +13,11 @@ import net.minecraftforge.fml.client.event.ConfigChangedEvent
  */
 import cn.railgunhamster.test.common.data.Constant
 import cn.railgunhamster.test.common.core.LogHelper
-
+/*
+ * Core Configuration Class
+ * 主要是用forge提供的@Config封装自己的Config File
+ * 并且这个Config还是Core的
+ */
 @Config(
   modid    = Constant.MOD_ID,
   name     = Constant.MOD_NAME,
