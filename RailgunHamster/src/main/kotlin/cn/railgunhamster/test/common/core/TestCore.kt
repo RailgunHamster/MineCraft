@@ -1,38 +1,32 @@
-package cn.railgunhamster.test.common
+package cn.railgunhamster.test.common.core
 /*
  * forge Mod
  */
 import net.minecraftforge.fml.common.Mod
 /*
- * mine
+ * constant
+ * logger
  */
 import cn.railgunhamster.test.common.data.Constant
+import cn.railgunhamster.test.common.core.LogHelper
 
 /*
  * @author RailgunHamster
  * 入口类
  */
 @Mod(
-	modid = Constant.MOD_ID,
-	name = Constant.MOD_NAME,
-	version = Constant.VERSION,
+	modid                     = Constant.MOD_ID,
+	name                      = Constant.MOD_NAME,
+	version                   = Constant.VERSION,
 	acceptedMinecraftVersions = Constant.MC_VERSION,
-	dependencies = Constant.MOD_DEPENDENCIES,
-	modLanguageAdapter = Constant.LANGUAGE_ADAPTER
+	dependencies              = Constant.MOD_DEPENDENCIES,
+	modLanguageAdapter        = Constant.LANGUAGE_ADAPTER
 )
-object Test {
-	/*
-	 * Logger
-	 * 所有debug, info, error信息均由此输出
-	 * optional，初始化为null，在preinit中赋值
-	 */
-	var logger: org.apache.logging.log4j.Logger? = null
-
+object TestCore {
 	/*
 	 * MC preinit
 	 *
 	 * Recommended activities:
-	 * 	Setup your logging {@link #getModLog()}
 	 * 	Load any configuration data you might have {@link #getSuggestedConfigurationFile()}
 	 * 	Search for a version.properties file and load it {@link #getVersionProperties()}
 	 * 	Configure your {@link ModMetadata} programmatically {@link #getModMetadata()}
@@ -40,8 +34,8 @@ object Test {
 	 */
 	@Mod.EventHandler
 	fun onPreInit(event: net.minecraftforge.fml.common.event.FMLPreInitializationEvent) {
-		// 从event中获取logger信息
-		this.logger = event.getModLog()
+		// 从event中获取logger
+		LogHelper.onPreInit(event.getModLog())
 	}
 
 	/*
@@ -53,7 +47,7 @@ object Test {
 	 */
 	@Mod.EventHandler
 	fun onInit(event: net.minecraftforge.fml.common.event.FMLInitializationEvent) {
-		this.logger?.info("init")
+		LogHelper.info("init")
 	}
 
 	/*
@@ -63,6 +57,6 @@ object Test {
 	 */
 	@Mod.EventHandler
 	fun onPostInit(event: net.minecraftforge.fml.common.event.FMLPostInitializationEvent) {
-		this.logger?.info("post init");
+		LogHelper.info("post init");
 	}
 }
