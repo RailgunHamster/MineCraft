@@ -1639,7 +1639,8 @@
   "minecraft:husbandry/bred_all_animals": {
     "criteria": {
       "bred_sheep": "2019-01-30 00:55:20 +0800",
-      "bred_cow": "2019-01-30 00:55:30 +0800"
+      "bred_cow": "2019-01-30 00:55:30 +0800",
+      "bred_mooshroom": "2019-01-31 17:51:58 +0800"
     },
     "done": false
   },
